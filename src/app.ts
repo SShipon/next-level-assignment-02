@@ -16,7 +16,7 @@ app.use('/api/products', productRouter)
  
 //get routes server running check
 app.get('/', (req: Request, res: Response) => {
-  res.send('<h2 >Hello World!!!</h2>')
+  res.send('<h2 style="color:#6A0987 ;text-align:center; margin:20% auto; font-size:48px; font-weight: 900;">DO NAINO KE PECHIDA SAU GALIYARE INMEN KHO 😎😁 </ br> KAR TU MILTA HAI KAHA 🙂</br> server running typeScript & mongoDB 😁😄😃</h2>')
 })
 
 app.all('*', (req, res, next) => {
