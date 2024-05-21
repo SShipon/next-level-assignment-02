@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express'
 import cors from 'cors'
-
+import { productRouter } from './app/product/product.route'
 
 
 const app = express()
@@ -11,7 +11,7 @@ app.use(cors())
 
 // routers
 
-
+app.use('/api/products', productRouter)
 
  
 //get routes server running check
