@@ -2,6 +2,8 @@ import { Request, Response } from 'express'
 import { productServices } from './product.service'
 import { productValidationSchema } from './product.validation'
 
+
+// crate single product controller api 
 const createProduct = async (req: Request, res: Response) => {
   try {
     const data = req.body
@@ -22,7 +24,7 @@ const createProduct = async (req: Request, res: Response) => {
     })
   }
 }
-
+// crate all  products controller api section 
 const getAllProducts = async (req: Request, res: Response) => {
   try {
     const { searchTerm } = req.query
@@ -40,6 +42,7 @@ const getAllProducts = async (req: Request, res: Response) => {
     })
   }
 }
+// crate single id  product controller api section 
 const getProductById = async (req: Request, res: Response) => {
   try {
     const { productId } = req.params
@@ -64,6 +67,8 @@ const getProductById = async (req: Request, res: Response) => {
     })
   }
 }
+
+// crate all data update Product product controller api section 
 const updateProduct = async (req: Request, res: Response) => {
   try {
     const { productId } = req.params
@@ -86,7 +91,7 @@ const updateProduct = async (req: Request, res: Response) => {
     })
   }
 }
-
+// crate single product controller add
 const deleteProduct = async (req: Request, res: Response) => {
   try {
     const { productId } = req.params

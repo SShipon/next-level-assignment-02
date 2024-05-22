@@ -1,3 +1,4 @@
+// all product interface and 
 export type TVariants = {
   type: string
   value: string
