@@ -1,7 +1,7 @@
 import express, { Request, Response } from 'express'
 import cors from 'cors'
 import { productRouter } from './app/product/product.route'
-
+import { orderRouter } from './app/order/order.route'
 
 const app = express()
 
@@ -9,10 +9,12 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-// routers
+// products routers api crate 
 
 app.use('/api/products', productRouter)
 
+//order routers 
+app.use('/api/orders', orderRouter)
  
 //get routes server running check
 app.get('/', (req: Request, res: Response) => {
