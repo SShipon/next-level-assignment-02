@@ -15,6 +15,7 @@ const getAllProducts = async (searchTerm: unknown) => {
   return result
 }
 
+
 const getProductById = async (id: string) => {
   const result = await Product.findById(id)
   return result
