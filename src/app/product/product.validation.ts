@@ -1,5 +1,5 @@
 import { z } from 'zod'
-
+// zod validation crated 
 const inventoryValidationSchema = z.object({
   quantity: z
     .number()
