@@ -20,6 +20,7 @@ Before you begin, ensure you have met the following requirements:
     git clone https://github.com/SShipon/next-level-assignment-02
     cd next-level-assignment-02
     
+    
 
 2. *Install dependencies:*
     
@@ -37,6 +38,9 @@ env
     DB_URL=mongodb://localhost:27017/my-database
     PORT=5000
     
+4. **Create hosting projects vercel:**
+url:  https://assignment-2-blush-alpha.vercel.app
+
 
 ## Running the Application
 

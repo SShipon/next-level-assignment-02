@@ -18,7 +18,7 @@ app.use('/api/orders', orderRouter)
  
 //get routes server running check
 app.get('/', (req: Request, res: Response) => {
-  res.send('<h2 style="color:#6A0987 ;text-align:center; margin:15% auto; font-size:48px; font-weight: 900;">✔️ DO NAINO KE PECHIDA SAU GALIYARE INMEN KHO 😎😁 </ br>✔️ KAR TU MILTA HAI KAHA 🙂</br> ✔️Server Running TypeScript & MongoDB 🔥😃</h2>')
+  res.send('<h2 style="color:#6A0987 ;text-align:center; margin:15% auto; font-size:48px; font-weight: 900;">✔️Server Running TypeScript & MongoDB 🔥😃</h2>')
 })
 
 app.all('*', (req, res, next) => {
